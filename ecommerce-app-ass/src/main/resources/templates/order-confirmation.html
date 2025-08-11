@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Order Confirmation</title>
+</head>
+<body>
+<h2>Order Placed Successfully!</h2>
+<p>Order ID: <span th:text="${order.orderId}"></span></p>
+<p>Total Amount: ₹<span th:text="${order.totalPrice}"></span></p>
+<a href="/products">Back to Products</a>
+</body>
+</html>
